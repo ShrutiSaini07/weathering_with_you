@@ -113,21 +113,22 @@ class _HomeState extends State<Home> {
                           child: Row(
                             children: [
                               Image.network(
-                                  "https://openweathermap.org/img/wn/$icon@2x.png"),
+                                  "https://openweathermap.org/img/wn/$icon@2x.png",
+                                height: 100,width: 100,),
                               SizedBox(
                                 width: 20,
                               ),
                               Column(
                                 children: [
                                   Text(
-                                    "$desc",
+                                "In $name",
                                     style: TextStyle(
-                                      fontSize: 16,
+                                      fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
                                   Text(
-                                    "In $name",
+                                    "$desc" + " Today",
                                     style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,
